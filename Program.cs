@@ -9,7 +9,7 @@ class Program
     {
         //Входные данные
         long points = ParseArg(args, "--points", 100_000_000L);
-        int workers = ParseArg(args, "--workers", Environment.ProcessorCount);
+        int workers = ParseArg(args, "--workers", Environment.ProcessorCount - 2);
 
         Stopwatch sw = Stopwatch.StartNew();
 

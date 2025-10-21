@@ -22,7 +22,7 @@ class Program
         Console.WriteLine($"Время выполнения: {sw.ElapsedMilliseconds} мс");
         Console.WriteLine($"Точек: {points:N0}");
         Console.WriteLine($"Воркеров: {workers}");
-        Console.WriteLine($"Физических ядер: {Environment.ProcessorCount}");
+        Console.WriteLine($"Физических ядер: {Environment.ProcessorCount - 2}");
 
         static T ParseArg<T>(string[] args, string key, T defaultValue)
         {
